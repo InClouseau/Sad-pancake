@@ -1,0 +1,66 @@
+body{
+    background-color: #f0e9ff;
+}
+
+label{
+    font-family: "Monospace", Monaco, monospace;
+    color:#172A3A;
+    font-size: 20px;
+    
+}
+
+#hp_h2{
+    font-family: "Monospace", Monaco, monospace;
+    color:#172A3A;;
+    font-size: 40px;
+    
+}
+
+.hp_nav{
+    text-align: center;
+    list-style-type: none;
+    background-color: #EDAFB8;
+    padding-top: 1px;
+    padding-bottom: 1px;
+    border-radius: 5px;
+}
+
+.hp_nav a{
+    color:#172A3A;
+    text-decoration: none;
+    padding: 30;
+    text-align: center;
+    margin-right: 30px;
+    font-family: "Monospace", Monaco, monospace;
+    padding-top: 7px;
+    padding-left: 7px;
+    padding-right: 7px;
+    padding-bottom: 7px;
+    
+    font-weight: 800;
+}
+
+.hp_nav a:hover{
+    background-color:rgb(202, 130, 170);
+    border: 3px solid;
+    padding: 4.5px;
+    border-color: rgb(255, 255, 255), 130, 170);
+}
+
+#hp_h2{
+    text-align: center;
+}
+
+#hp_p{
+    padding-left: 10%;
+    padding-right: 10%;
+
+    font-family: "Monospace", Monaco, monospace;
+    font-weight: 800;
+}
+
+img{
+    height: auto%;
+    padding-top:30px;
+    width: 100%;
+}

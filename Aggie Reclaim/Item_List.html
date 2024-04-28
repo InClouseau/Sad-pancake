@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Table</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <style>
+        body{
+            color:#172A3A;
+            font-family: "Monospace", Monaco, monospace;
+        }
+        .header{
+            text-align: center;
+            border-radius: 5px;
+            
+            padding-top: 10px;
+            padding-bottom: 10px;
+        }
+        .grid-container{
+            margin-left: 2vw;
+            margin-right: 2vw;
+            display: inline-grid;
+            column-gap: 2vw;
+            row-gap: 2vw;
+            grid-template-columns: 46vw 46vw;
+        }
+        .grid-container > div {
+            background-color: #EDAFB8;
+            text-align: center;
+            border-radius: 8px;
+            word-wrap: break-word;
+        } 
+        .grid-item > p {
+            margin-left: 5px;
+            margin-right: 5px;
+        }
+        .grid-item > h4{
+            border: 3px solid #000000;
+            margin-left: 20px;
+            margin-right: 20px;
+            border-radius: 3px;
+        }
+        label {
+            font-size: 15px;
+            padding: 4px;
+            background-color: #EDAFB8;    
+            border-radius: 8px;
+        }
+        .content{
+            border: 1px solid #000000; 
+            padding: 2px; 
+            margin-top: 5px;
+            border-radius: 8px;
+        }
+    </style>
+</head>
+<body>
+    
+    
+    <h1 class="header">Lost Item list</h1>
+    <nav class="hp_nav">
+        <ul>
+            <p>
+                <a href="ACTAUL_HOMEPAGE.html">Home</a>
+                <a href="Item_List.html">Search for Missing Item</a>
+                <a href="Home_Page.html">Add Item</a>
+            </p>
+        </ul>
+    </nav>
+    <br>
+    <label for="Sort by" style = "font-size: 13px; font-family: Monospace, Monaco, monospace; border: 2px solid #000000; padding: 2px; background-color: #EDAFB8;border-radius: 8px;">Sort by:</label>
+    <select name="Sort by" id="Sort by" style="width: 160px; height: 25px; font-size: 13px; border-radius: 8px; " >
+      <option value="" disabled selected="Select">Select</option>  
+      <option value="Electronic">Electronic</option>
+      <option value="Wallet">Wallet</option>
+      <option value="Water Bottle">Water Bottle</option>
+      <option value="ID">ID</option>
+      <option value="Clothing">Clothing</option>
+      <option value="School Material">School Material</option>
+      <option value="Keychain">Keychain</option>
+      <option value="Other">Other</option>
+    </select>
+    <b>
+    <button type="button" style= "float: right; font-family: Monospace, Monaco, monospace; width: 160px; height: 25px; font-size: 13px; background-color: #EDAFB8;border-radius: 8px;" class="collapsible">How to Reclaim</button>
+    <div class="content">
+        How to Reclaim:<br>
+            &nbsp;&nbsp;Step 1: Locate your lost item <br>
+            &nbsp;&nbsp;Step 2: Bring identification, proof of ownership, or detailed description of your item <br>
+    </div>
+    <script>
+        var coll = document.getElementsByClassName("collapsible");
+        var i=0;
+        
+        for (i = 0; i < coll.length; i++) {
+          coll[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var content = this.nextElementSibling;
+            if (content.style.display === "block") {
+              content.style.display = "none";
+            } else {
+              content.style.display = "block";
+            }
+          });
+        }
+        </script>
+    
+    <h2 style="text-align:center; font-size:30px; color:#9e525e; border-radius: 4px; border-bottom: 5px solid #9e525e;">Recent</h2>
+    <div class="grid-container">
+        <div class="grid-item">
+            <h4>Clothing</h4>
+            <p class="time">04/27/2024</p>
+            <p>Location: ARC</p>
+            <p>HackDavis 2024 text / light blue</p>
+        </div>
+        <div class="grid-item">
+            <h4>Keychain</h4>
+            <p class="time">04/27/2024</p>
+            <p>Location:Segundo Service Center </p>
+            <p>Orange lanyard / blue bottle opener / two keys</p>
+        </div>
+        <div class="grid-item">
+            <h4>Electronic</h4>
+            <p class="time">04/26/2024</p>
+            <p>Location: Memorial Union</p>
+            <p>Airpods max / white case </p>
+        </div>
+        <div class="grid-item">
+            <h4>Water bottle</h4>
+            <p class="time">04/26/2024</p>
+            <p>Location: Shield's Library</p>
+            <p>Red and black Camelbak / live laugh love sticker</p>
+        </div>
+        <div class="grid-item">
+            <h4>ID</h4>
+            <p class="time">04/25/2024</p>
+            <p>Location: Student Community Center </p>
+            <p>Aggie card /  Kent Huang</p>
+        </div>
+        <div class="grid-item">
+            <h4>Electronic</h4>
+            <p class="time">04/24/2024</p>
+            <p>Location: UCD Police Station </p>
+            <p>iPhone 14 / Black "speck" case / card holder attachment</p>
+        </div>
+        <div class="grid-item">
+            <h4>Electronic</h4>
+            <p class="time">04/24/2024</p>
+            <p>Location: Tercero Service Center</p>
+            <p>Black logitech mouse / wireless</p>
+        </div>
+        <div class="grid-item">
+            <h4>School Material</h4>
+            <p class="time">04/23/2024</p>
+            <p>Location: Shield's Library </p>
+            <p>Principles of Modern Chemistry textbook</p>
+        </div>
+    </div> 
+</body>
+</html>

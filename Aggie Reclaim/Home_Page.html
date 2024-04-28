@@ -1,0 +1,56 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Form</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    
+    <style>
+        
+        body {
+            text-align: center;
+            font-family: "Monospace", Monaco, monospace;
+        }
+        .login {
+            background-color: #EDAFB8;
+            padding-top: 5px;
+            padding-bottom: 20px;
+            border-radius: 55px;
+            width: 60%; /* Set a specific width for the background container */
+            margin: 0 auto;
+        }
+    </style>
+    <br>
+    <br>
+    <div class="login">
+    <h2 class="header">Login Page</h2><br>
+    
+    <form id="login" method="get" action="login.php">
+        <label style=" font-size: 16px;"><b>Username:
+        </b>
+        </label>
+        <input type="text" name="Uname" id="Uname" placeholder="Username" required>
+        <br><br>
+        <label style=" font-size: 16px;"><b>Password:
+        </b>
+        </label>
+        <input type="Password" name="Pass" id="Pass" placeholder="Password" required>
+        <br><br>
+        <input type="button" value="Login" style=" width: 70px; height: 30px; font-size: 16px; border-radius: 16px;" onclick="window.location.href='index3.html'" />
+        <br><br>
+        <a href="Item_List.html">Search for missing item</a>
+        <br><br>
+        <input type="checkbox" id="check">
+        <span>Remember me</span>
+        <br><br>
+        Forgot <a href="#">Password</a>
+        
+    </form>
+    
+</div>
+</body>
+</html>
